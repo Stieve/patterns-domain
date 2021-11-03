@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Authors>Ordina Belgium - NCore</Authors>
+		<Description>Default implementation of Domain-Driven Design principles using event sourcing</Description>
+		<Copyright>Copyright Ordina Belgium - NCore</Copyright>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageTags>ddd;aggregate;event sourcing</PackageTags>
+		<IsPackable>true</IsPackable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="NCore.Infra.EventStore.DependencyInjection" Version="2021.11.25.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\NCore.Patterns.Domain.EventStore.Abstractions\NCore.Patterns.Domain.EventStore.Abstractions.csproj" />
+		<ProjectReference Include="..\NCore.Patterns.Domain\NCore.Patterns.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

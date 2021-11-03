@@ -1,0 +1,27 @@
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+trigger:
+  branches:
+    include:
+    - main
+  paths:
+    include:
+      - src/*
+      - .build/*
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: "Azure Cloud Services - Wiki/NCore.Templates"
+
+pool:
+  vmImage: "windows-latest"
+
+stages:
+- template: "Pipelines/Stages/BuildAndDeployNuGetPackage/NCoreAzureCloudServices.v01.yaml@templates"
+  parameters:
+    solution: "src/NCore.Patterns.Domain/NCore.Patterns.Domain.sln"
+    projects: "src/**/*.csproj"
+    testProjects: "src/**/*.*Tests.csproj"
+    symbolPackageFormat: "snupkg"

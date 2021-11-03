@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{9A68731A-3F0F-4787-BA3F-4687F9CC6621}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.build\NCore.Patterns.Domain\NCore.Patterns.Domain.yaml = ..\..\.build\NCore.Patterns.Domain\NCore.Patterns.Domain.yaml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCore.Patterns.Domain", "NCore.Patterns.Domain\NCore.Patterns.Domain.csproj", "{274D3A0A-8470-4E75-8923-161CC534B915}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCore.Patterns.Domain.Abstractions", "NCore.Patterns.Domain.Abstractions\NCore.Patterns.Domain.Abstractions.csproj", "{7405735C-33BB-446E-A346-C3F0E54A7E10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCore.Patterns.Domain.UnitTests", "NCore.Patterns.Domain.UnitTests\NCore.Patterns.Domain.UnitTests.csproj", "{7E3D9EB7-5A2B-4026-B48C-7D7FE13F0883}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8CF7DDC4-AD77-4BF7-8A27-269794880EBA}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\nuget.config = ..\..\nuget.config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCore.Patterns.Domain.DependencyInjection", "NCore.Patterns.Domain.DependencyInjection\NCore.Patterns.Domain.DependencyInjection.csproj", "{C9E2FAA8-A05B-4A5F-9AA7-E63891F4B2A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCore.Patterns.Domain.EventStore", "NCore.Patterns.Domain.EventStore\NCore.Patterns.Domain.EventStore.csproj", "{EDB19118-7D87-4374-9B89-ADAF639549B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCore.Patterns.Domain.EventStore.IntegrationTests", "NCore.Patterns.Domain.EventStore.IntegrationTests\NCore.Patterns.Domain.EventStore.IntegrationTests.csproj", "{9BEE98CB-B5A6-4319-8F22-1AC49B10038E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCore.Patterns.Domain.EventStore.Abstractions", "NCore.Patterns.Domain.EventStore.Abstractions\NCore.Patterns.Domain.EventStore.Abstractions.csproj", "{6EA312E4-3011-44C9-8610-ADD52954E58D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{274D3A0A-8470-4E75-8923-161CC534B915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274D3A0A-8470-4E75-8923-161CC534B915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274D3A0A-8470-4E75-8923-161CC534B915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274D3A0A-8470-4E75-8923-161CC534B915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7405735C-33BB-446E-A346-C3F0E54A7E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7405735C-33BB-446E-A346-C3F0E54A7E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7405735C-33BB-446E-A346-C3F0E54A7E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7405735C-33BB-446E-A346-C3F0E54A7E10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3D9EB7-5A2B-4026-B48C-7D7FE13F0883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3D9EB7-5A2B-4026-B48C-7D7FE13F0883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E3D9EB7-5A2B-4026-B48C-7D7FE13F0883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E3D9EB7-5A2B-4026-B48C-7D7FE13F0883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E2FAA8-A05B-4A5F-9AA7-E63891F4B2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E2FAA8-A05B-4A5F-9AA7-E63891F4B2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E2FAA8-A05B-4A5F-9AA7-E63891F4B2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E2FAA8-A05B-4A5F-9AA7-E63891F4B2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB19118-7D87-4374-9B89-ADAF639549B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB19118-7D87-4374-9B89-ADAF639549B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB19118-7D87-4374-9B89-ADAF639549B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB19118-7D87-4374-9B89-ADAF639549B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BEE98CB-B5A6-4319-8F22-1AC49B10038E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEE98CB-B5A6-4319-8F22-1AC49B10038E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEE98CB-B5A6-4319-8F22-1AC49B10038E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEE98CB-B5A6-4319-8F22-1AC49B10038E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA312E4-3011-44C9-8610-ADD52954E58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA312E4-3011-44C9-8610-ADD52954E58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA312E4-3011-44C9-8610-ADD52954E58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA312E4-3011-44C9-8610-ADD52954E58D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC5A8D1C-B287-46AB-9663-E8619148F5B5}
+	EndGlobalSection
+EndGlobal

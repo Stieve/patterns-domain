@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Authors>Ordina Belgium - NCore</Authors>
+		<Description>Default implementation of Domain-Driven Design principles.</Description>
+		<Copyright>Copyright Ordina Belgium - NCore</Copyright>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageTags>ddd;aggregate</PackageTags>
+		<IsPackable>true</IsPackable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\NCore.Patterns.Domain.Abstractions\NCore.Patterns.Domain.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>

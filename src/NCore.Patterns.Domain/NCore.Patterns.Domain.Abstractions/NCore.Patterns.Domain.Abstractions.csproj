@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Authors>Ordina Belgium - NCore</Authors>
+		<Description>Domain abstractions for NCore.Patterns.Domain</Description>
+		<Copyright>Copyright Ordina Belgium - NCore</Copyright>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageTags>ddd;aggregate</PackageTags>
+		<IsPackable>true</IsPackable>
+	</PropertyGroup>
+
+</Project>
